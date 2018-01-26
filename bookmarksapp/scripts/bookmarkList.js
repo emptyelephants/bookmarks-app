@@ -76,6 +76,7 @@ const bookmarkList = function(){
  //event handlers  
  const handleBookmarkExpand = function(){
     $('.js-bookmarks-list').on('click','.bookmark-element',event=>{
+      event.stopPropagation();
       const id =  getItemIdFromElement(event.currentTarget);
       const toExpand = Store.findById(id);
       console.log('test123test.  '+event.currentTarget);
@@ -97,9 +98,10 @@ const bookmarkList = function(){
   };
 
   const handleLinkButton = function (){
-    $('.js-open-link').on('click',(event)=>{
+    $('.js-open-link a').on('click',(event)=>{
       event.preventDefault();
-      
+      event.stopPropagation();
+
     });
   };
 
