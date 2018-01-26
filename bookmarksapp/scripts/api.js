@@ -4,12 +4,12 @@ const Api = function(){
   const getBookmarks = function(callback){
     $.getJSON(`${BASE_URL}`,callback);
   };
-  const createBookmarkItem = function(title,url,rating,blurb,callback){
+  const createBookmarkItem = function(title,url,rating,desc,callback){
     const newBookmarkItem ={
       title,
       url,
       rating,
-      desc:blurb
+      desc
     };
     $.ajax({
       url:`${BASE_URL}`,
