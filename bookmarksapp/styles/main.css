@@ -7,7 +7,7 @@
 nav{
   height: 80px;
   position:fixed;
-  background-color:aquamarine;
+  background-color:green;
   width:100%;
   vertical-align: center;
   z-index:10;
@@ -25,6 +25,7 @@ main{
   top:120px;
   margin-left:10%;
   margin-right:10%;
+  margin-bottom:5%;
   border:1px solid black;
   padding:15px;
   width:80%;

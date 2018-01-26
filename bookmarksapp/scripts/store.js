@@ -19,6 +19,7 @@ const Store = function(){
   return{
     bookmarks:[],
     isAdding:false,
+    minRating:0,
     addBookmark,
     findById,
     findAndDelete
